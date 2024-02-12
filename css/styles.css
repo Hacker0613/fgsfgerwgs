@@ -1,0 +1,70 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 100%; /* Изменено для адаптивности */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+}
+
+.product-item {
+    border-bottom: 1px solid #444;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.product-item img {
+    max-width: 100%; /* Изменено для адаптивности */
+    margin-right: 20px; /* Уменьшено для адаптивности */
+}
+
+.product-item h2 {
+    margin: 0;
+}
+
+.buy-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto; /* Выровнено по правому краю */
+    margin-top: 10px; /* Добавлено отступа сверху */
+}
+
+/* Медиа-запросы для адаптивности */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .product-item img {
+        max-width: 100%;
+        margin-right: 10px;
+    }
+
+    .buy-btn {
+        margin-left: auto;
+        margin-top: 5px;
+    }
+}
